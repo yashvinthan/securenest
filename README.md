@@ -1,4 +1,6 @@
- just run /n
-cd frontend /n
-npm install /n
+ just run
+
+ 
+cd frontend 
+npm install 
 npm run dev
