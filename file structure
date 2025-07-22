@@ -1,0 +1,61 @@
+securenest/                        # Root monorepo
+├── backend/                      # FastAPI backend
+│   ├── app/
+│   │   ├── main.py                  # FastAPI entrypoint
+│   │   ├── models/
+│   │   │   ├── user.py
+│   │   │   ├── campaign.py
+│   │   │   ├── breach.py
+│   │   │   └── compliance.py
+│   │   ├── routes/
+│   │   │   ├── auth.py
+│   │   │   ├── phishing.py
+│   │   │   ├── breaches.py
+│   │   │   ├── compliance.py
+│   │   │   └── __init__.py
+│   │   ├── services/
+│   │   │   ├── phishing_service.py
+│   │   │   ├── breach_scanner.py
+│   │   │   └── compliance_check.py
+│   │   ├── db/
+│   │   │   ├── memory.py
+│   │   │   └── postgres.py
+│   │   └── config.py
+│   ├── tests/
+│   │   ├── test_auth.py
+│   │   ├── test_phishing.py
+│   │   ├── test_breaches.py
+│   │   └── test_compliance.py
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   └── .env
+│
+├── frontend/                    # React frontend
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Phishing.jsx
+│   │   │   ├── Breaches.jsx
+│   │   │   └── Compliance.jsx
+│   │   ├── services/
+│   │   │   ├── authService.js
+│   │   │   ├── phishingService.js
+│   │   │   ├── breachService.js
+│   │   │   └── complianceService.js
+│   │   ├── routes/
+│   │   │   └── AppRoutes.jsx
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── README.md
+│
+├── docker-compose.yml           # Orchestration for backend + frontend
+└── README.md                    # Project root doc
